@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 19.2 14.3" style="enable-background:new 0 0 19.2 14.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:url(#XMLID_206_);stroke-miterlimit:10;}
+	.st1{fill:none;stroke:url(#XMLID_207_);stroke-miterlimit:10;}
+	.st2{fill:none;stroke:url(#XMLID_208_);stroke-miterlimit:10;}
+	.st3{display:none;fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<linearGradient id="XMLID_206_" gradientUnits="userSpaceOnUse" x1="136.1563" y1="9.5833" x2="224.6563" y2="9.5833">
+	<stop  offset="0" style="stop-color:#2E3192"/>
+	<stop  offset="0.4532" style="stop-color:#ED1C24"/>
+	<stop  offset="1" style="stop-color:#F9ED32"/>
+</linearGradient>
+<circle id="XMLID_1_" class="st0" cx="180.4" cy="9.6" r="43.8"/>
+<g id="XMLID_4_">
+	<linearGradient id="XMLID_207_" gradientUnits="userSpaceOnUse" x1="149.724" y1="9.5833" x2="181.129" y2="9.5833">
+		<stop  offset="0" style="stop-color:#2E3192"/>
+		<stop  offset="0.4532" style="stop-color:#ED1C24"/>
+		<stop  offset="1" style="stop-color:#F9ED32"/>
+	</linearGradient>
+	<line id="XMLID_2_" class="st1" x1="150.1" y1="-5.8" x2="180.8" y2="24.9"/>
+	
+		<linearGradient id="XMLID_208_" gradientUnits="userSpaceOnUse" x1="-7.286" y1="-204.3027" x2="24.119" y2="-204.3027" gradientTransform="matrix(-5.096258e-008 1 -1 -6.630855e-007 -8.9167 1.1667)">
+		<stop  offset="0" style="stop-color:#2E3192"/>
+		<stop  offset="0.4532" style="stop-color:#ED1C24"/>
+		<stop  offset="1" style="stop-color:#F9ED32"/>
+	</linearGradient>
+	<line id="XMLID_3_" class="st2" x1="210.7" y1="-5.8" x2="180" y2="24.9"/>
+</g>
+<rect id="XMLID_148_" x="-51.8" y="-51.3" class="st3" width="136.8" height="138.5"/>
+<g id="XMLID_202_">
+	<path id="XMLID_203_" d="M8.7,6.9V14H1.7V7.7l3.2-7.4h3L5.9,6.9H8.7z M18.4,6.9V14h-7.1V7.7l3.2-7.4h3l-1.9,6.7H18.4z"/>
+</g>
+</svg>
