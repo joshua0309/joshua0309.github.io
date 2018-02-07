@@ -138,6 +138,24 @@ p {
 }
 
 .albumTitle {
-	font-size: 24px;
+	font-size: 28px;
+	text-align:left;
+}
+
+.albumDesc {
+
+	column-width: 450px;
+	text-align: justify;
+
+}
+
+.clientName {
+	font-size: 20px;
+}
+
+.margin-top {
+
+	margin-top: 72px;
+
 }
 
