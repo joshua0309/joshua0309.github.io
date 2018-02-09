@@ -103,17 +103,19 @@ html,body {
 
 .clientInfo-con {
 	/*margin-top: 50%;*/
+
 }
 
 .clientDesc {
-	font-size: 14px;
+	font-size: 1em;
 	text-align: justify;
-	/*width: 300px;*/
+	width: 500px;
 	column-width: 300px;
 	margin-left: auto;
 	margin-right:auto;
-	padding: 0px 145px;
+	/*padding: 0px 145px;*/
 	line-height: 1.6;
+	padding: 15px 15px;
 }
 
 p {
@@ -144,7 +146,7 @@ p {
 
 .albumDesc {
 
-	column-width: 450px;
+	/*column-width: 450px;*/
 	text-align: justify;
 
 }
@@ -159,3 +161,9 @@ p {
 
 }
 
+
+@media screen and (min-width: 764px) {
+		.clientDesc {
+
+		}
+}
