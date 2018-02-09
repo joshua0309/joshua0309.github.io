@@ -1,9 +1,13 @@
+/*config*/
 
 html,body {
 	height: 100%;
 	margin: 0;
 }
 
+a {
+	font-family: "Oswald", 'sans-serif';
+}
 
 p {
 	font-family: "Lato", 'sans-serif';
@@ -14,23 +18,68 @@ p {
 }
 
 span {
+	font-family: "Oswald", 'sans-serif';
 	display: block;
 	margin-top: 14px;
 }
 
+input[type='text'],input[type='email'] {
+	/*border-top-color: transparent;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-bottom-color: black;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;*/
+	border-color: transparent;
+	width: 50%;
+}
+
+input:focus {
+    outline:none;
+}
+
+
+@media (max-width: 768px) {
+	.margin-top {
+		margin-top: 50px;
+	}
+
+	input[type='text'],input[type='email'] {
+		width: 100%;
+	}
+
+}
+
 
 .thin {
- 	font-weight: 100;
+ 	font-weight: 300 !important;
   }
 
 .thick {
-	font-weight: 800;
+	font-weight: 700 !important;
 }
 
 .center {
 	margin: 0 auto;
 	text-align: center;
 }
+
+.padding-0 {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+.centerV {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.margin-top {
+	margin-top: 100px;
+}
+
 
 .clientTitle {
 	font-size: 48px;
@@ -77,7 +126,7 @@ span {
 	/*background-position: ;*/
     background-repeat: no-repeat;
     background-size: cover;
- 
+ 	z-index: -1;
 	position:absolute;
 	width: 100%;
 	height: 100%;
@@ -90,49 +139,55 @@ span {
 
 
 .buttonDown {
-	border-radius: 50%;
-	height: 45px;
-	width: 50px;
-	background-color: white;
+	/*border-radius: 50%;*/
+	height: 35px;
+	width: 35px;
+	/*background-color: white;*/
 	position: absolute;
 	bottom: 25px;
 	left: 50%;
  }
 
-#quoteLogo {
-	height: 80px;
-	width: 80px;
-}
 
 /*quote*/
 
-.quote p {
-	font-family: 'Lato', 'sans-serif';
-	font-size: 2em; 
-	font-weight: 800;
-	color
+#quoteLogo {
+	height: 80px;
+	width: 80px;
+	z-index: -1;
 }
+
 
 .quote {
 	height: auto;
+	width: 100%;
 	margin: 0 auto;
 }
 
+.quote:before {
+	z-index: -1;
+	position:absolute;
+	width: 100%;
+	height: 55%;
+	transform-origin: 50% 50%;
+	transform:skewY(15deg);
+	background-color: #edf3ff ;
+	content:'';
+	/*box-shadow: 0px 0px 1px;*/
+}
+
 .quote span {
-	color: #373a54;
+	font-family: 'Lato', 'sans-serif';
+	color: #1b3468;
 	display: block;
-	font-size: 3em;
-	font-weight: 100; 
+	font-size: 2em;
+	font-weight: 300 ; 
 
 }
 
 .albumTitle {
 	font-size: 28px;
 	
-}
-
-.margin-top {
-	margin-top: 150px;
 }
 
 /*introduction*/
@@ -160,7 +215,7 @@ span {
 }
 
 #reyes {
-	letter-spacing: 30px;
+	letter-spacing: 20px;
 	color: blue;
 
 }
@@ -174,16 +229,35 @@ span {
 	background-color: ;
 }
 
-.padding-0 {
-	padding-right: 0px !important;
-	padding-left: 0px !important;
-}
+/*event*/
 
 .eventCon {
 	height: 350px;
 	background-color: ;
 	margin-top: 0px;
-	
+	position: relative;
+}
+
+
+
+.eventPlace {
+	position: relative;
+}
+
+.eventCon span {
+	margin: 0 0 0 0;
+	font-size: 36px;
+}
+
+.gLine {
+	width: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffea32+3,e20000+49,0400ff+100 */
+	background: #ffea32; /* Old browsers */
+	background: -moz-linear-gradient(left, #ffea32 3%, #e20000 49%, #0400ff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #ffea32 3%,#e20000 49%,#0400ff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #ffea32 3%,#e20000 49%,#0400ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffea32', endColorstr='#0400ff',GradientType=1 ); /* IE6-9 */
+	height: 1px;
 }
 
 .eventPicture {
@@ -191,11 +265,21 @@ span {
 	color: white;
 }
 
-.centerV {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-    width: 50%;
-    margin: -15% 0 0 -25%;
-    text-align: center;
+
+
+.date {
+	margin-bottom: 0px;
+}
+
+footer {
+	background-color: #0061ff;
+	width:  100%;
+	height: 300px;
+	color:white;
+	foi
+	font-family: 'Oswald', 'sans-serif';
+}
+
+footer ul {
+	list-style-type: none;
 }
