@@ -5,6 +5,37 @@ html,body {
 }
 
 
+p {
+	font-family: "Lato", 'sans-serif';
+	font-size: 16px;
+	text-align: left;
+	line-height: 30px;
+	margin-top: 14px;
+}
+
+span {
+	display: block;
+	margin-top: 14px;
+}
+
+
+.thin {
+ 	font-weight: 100;
+  }
+
+.thick {
+	font-weight: 800;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.clientTitle {
+	font-size: 48px;
+}
+
 .logo {
 	height: 50px;
 	width: 50px;
@@ -14,13 +45,6 @@ html,body {
 .nav-box {
 	padding: 50px 100px;
 	width: 100%;
-	
-
-}
-
-.padding-0{
-    padding-right:0;
-    padding-left:0;
 }
 
 .nav-list {
@@ -28,10 +52,6 @@ html,body {
 	
 }
 
-#elvis1 {
-	position: absolute;
-	top: 0px;
-}
 
 .nav-list li {
 	display: inline;
@@ -62,7 +82,7 @@ html,body {
 	width: 100%;
 	height: 100%;
 	transform-origin: top left;
-	transform:skewY(-3deg);
+	transform:skewY(-4deg);
 	background-color: white ;
 	content:'';
 	box-shadow: 0px 0px 1px;
@@ -71,99 +91,111 @@ html,body {
 
 .buttonDown {
 	border-radius: 50%;
-	height: 50px;
+	height: 45px;
 	width: 50px;
-	position: absolute;
-	bottom:   0px;
-	left: 50%;
 	background-color: white;
-	border-width: 1px;
-    border-style: red;
-    
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
  }
 
+#quoteLogo {
+	height: 80px;
+	width: 80px;
+}
 
-.thin {
- 	font-weight: 50;
- 	font-size: 44px;
- 	display: block;
- 	text-align: center;
- }
+/*quote*/
 
-.thick {
+.quote p {
+	font-family: 'Lato', 'sans-serif';
+	font-size: 2em; 
 	font-weight: 800;
-	font-size: 44px;
-	display:block;
-	text-align: center;
+	color
+}
+
+.quote {
+	height: auto;
+	margin: 0 auto;
+}
+
+.quote span {
+	color: #373a54;
+	display: block;
+	font-size: 3em;
+	font-weight: 100; 
+
+}
+
+.albumTitle {
+	font-size: 28px;
+	
+}
+
+.margin-top {
+	margin-top: 150px;
+}
+
+/*introduction*/
+
+#introduction{
+	margin-bottom: 15px;
 }
 
 .clientTitle {
 	line-height: 1.0;
 }
 
-.clientInfo-con {
-	/*margin-top: 50%;*/
+.clientName span {
+	margin-top: 14px;
+}
+
+#noberto {
+	letter-spacing: 10px;
+	color: red;
+}
+
+#buddy {
+	letter-spacing: 11px;
+	color: gold;
+}
+
+#reyes {
+	letter-spacing: 30px;
+	color: blue;
 
 }
 
-.clientDesc {
-	font-size: 1em;
-	text-align: justify;
-	width: 500px;
-	column-width: 300px;
-	margin-left: auto;
-	margin-right:auto;
-	/*padding: 0px 145px;*/
-	line-height: 1.6;
-	padding: 15px 15px;
-}
-
-p {
-	font-family: "Lato", 'sans-serif';
-}
-
-.center {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-#quote {
-	height: 80px;
-	width: 80px;
-}
-
-.quote p {
-	font-family: 'Lato', 'sans-serif';
-	font-size: 2em; 
-	font-weight: 800;
-}
-
-.albumTitle {
-	font-size: 28px;
-	text-align:left;
-}
-
-.albumDesc {
-
-	/*column-width: 450px;*/
-	text-align: justify;
-
-}
-
-.clientName {
+.spotifyText {
 	font-size: 20px;
 }
 
-.margin-top {
-
-	margin-top: 72px;
-
+.eventPicture {
+	width: 100%;
+	background-color: ;
 }
 
+.padding-0 {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
 
-@media screen and (min-width: 764px) {
-		.clientDesc {
+.eventCon {
+	height: 350px;
+	background-color: ;
+	margin-top: 0px;
+	
+}
 
-		}
+.eventPicture {
+	background-color: #b2b2b2;
+	color: white;
+}
+
+.centerV {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+    text-align: center;
 }
