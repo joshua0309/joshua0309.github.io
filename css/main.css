@@ -3,7 +3,9 @@
 html,body {
 	height: 100%;
 	margin: 0;
+	/*background-color: #ffeed6;*/
 }
+
 
 a {
 	font-family: "Oswald", 'sans-serif';
@@ -23,7 +25,13 @@ span {
 	margin-top: 14px;
 }
 
-input[type='text'],input[type='email'] {
+footer i,a {
+	color: white;
+	font-size: 18px;
+	margin: 0px 8px;
+}
+
+input[type='text'],input[type='email'],input[type='firstname'] {
 	/*border-top-color: transparent;
 	border-right-color: transparent;
 	border-left-color: transparent;
@@ -48,6 +56,17 @@ input:focus {
 		width: 100%;
 	}
 
+}
+
+button  {
+	margin-top: 14px;	
+	width: 100px;
+	background-color: #3f9cff;
+	border-color: transparent;
+	color: white;
+	font-family: 'Oswald', 'serif';
+	font-size: 16px;
+	text-transform: uppercase;
 }
 
 
@@ -80,19 +99,18 @@ input:focus {
 	margin-top: 100px;
 }
 
-
 .clientTitle {
 	font-size: 48px;
 }
 
 .logo {
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 	float: left;
 }
 
 .nav-box {
-	padding: 50px 100px;
+	padding: 0px 10px;
 	width: 100%;
 }
 
@@ -101,14 +119,60 @@ input:focus {
 	
 }
 
-
 .nav-list li {
 	display: inline;
 	float: right;
-	margin: 0px 15px;
-	font-family: 'Oswald', 'sans-serif';
-	font-size: 24px;
+	margin: 0px 10px;
+	font-size: 20px;
+	font-weight: 500;
+	
 }
+
+.nav-list a {
+	color: black !important;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.nav-list a:hover, .nav-list a:focus {
+	animation: changecolor 0.2s linear forwards ;
+	/*animation: draw 0.5s ease;*/
+}
+
+@keyframes changecolor {
+
+	0% {
+		color: black;
+	}
+
+	100% {
+
+		 color: #3f9cff ;
+	}
+
+}
+
+@-webkit-keyframes changecolor {
+
+	0% {
+		color: black;
+	}
+
+
+	100% {
+
+		 color: #ff3f3f ;
+	}
+
+}
+
+
+@keyframes draw {
+	
+
+}
+
+
 
 .elvisMain {
 	height: 100%;
@@ -137,6 +201,7 @@ input:focus {
 	content:'';
 	box-shadow: 0px 0px 1px;
 }
+
 
 
 .buttonDown {
@@ -193,7 +258,15 @@ input:focus {
 
 /*introduction*/
 
-#introduction{
+#introductionPic {
+	width: 100%;
+	
+/*	background-image: url('../img/elvis2.png');
+	background-repeat: no-repeat;*/
+
+}
+
+#introduction {
 	margin-bottom: 15px;
 }
 
@@ -207,7 +280,7 @@ input:focus {
 
 #noberto {
 	letter-spacing: 10px;
-	color: red;
+	color: #ff3f3f;
 }
 
 #buddy {
@@ -217,8 +290,14 @@ input:focus {
 
 #reyes {
 	letter-spacing: 20px;
-	color: blue;
+	color: #3f9cff;
 
+}
+
+.latestalbum {
+	 transform: perspective( 600px ) rotateY( 15deg );
+	 -webkit-transform: perspective( 600px ) rotateY( 15deg );
+	 -o-transform: perspective( 600px ) rotateY( 15deg );
 }
 
 .spotifyText {
@@ -273,25 +352,36 @@ input:focus {
 }
 
 footer {
-	background-color: red;
+	background-color: #ff3f3f;
 	width:  100%;
-	height: auto;
-	color:white;
+	height: 65px;
+	color: white;
+	position: relative;
 	font-family: 'Oswald', 'sans-serif';
 }
 
 footer ul {
 	list-style-type: none;
+
 }
 
 footer li {
-	margin: 10px 0px;
+	margin: 0px 0px;
+	display: inline;
 }
 
 .reserved {
-	position: relative;
-	height: 55px;
-	background: #b70101;
-	margin-top: 50px;
-	font-size: 14px;
+	/*position: relative;*/
+	/*height: 55px;*/
+	background: #f72e2e;
+	/*margin-top: 50px;*/
+	font-size: 12px;
+	width: 100%;
+	color: white;
+	padding: 0px 5px;
+	font-family: 'Oswald', 'serif';
+}
+
+.text-reserved {
+	padding: 5px 5px 0px 0px;
 }

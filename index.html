@@ -8,43 +8,50 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
    	<!--Fonts -->
    	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,900" rel="stylesheet">
    	<link href="https://fonts.googleapis.com/css?family=Oswald:200,400" rel="stylesheet">
+   	
+
+   	<!-- font-awesome -->
+   	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 </head>
 <body>
 
 
 <div class="elvisMain">
-		<div class="container">	
-				<div class="row">	
-					<div class="col-xs-12 col-md-12 col-lg-12 ">
-					    <div class="header">
-							<nav>
-								<div class="nav-box">
-									<img class="logo" src="img/logo.png" alt=""></img>
-									<div class="nav_items">
-										<ul class='nav-list'>
-											<li><a href="">Biography</a></li>
-											<li><a href="">Music</a></li>
-											<li><a href="">Tour</a></li>
-											<li><a href="">Contact</a></li>
-										</ul>
-									</div>
-								</div>
-							</nav>
+	<div class="container">	
+		<div class="row">	
+			<div class="col-xs-12 col-md-12 col-lg-12 ">
+				 <div class="header">
+					<nav>
+						<div class="nav-box">
+							<img class="logo" src="img/logo.png" alt=""></img>
+							<div class="nav_items">
+								<ul class='nav-list'>
+									<li><a href="#contact">Contact</a></li>
+									<li><a href="#event">Tour</a></li>
+									<li><a href="#album">Music</a></li>
+									<li><a href="#bio">Biography</a></li>
+									
+								</ul>
+							</div>
 						</div>
-					</div>
+					</nav>
 				</div>
+			</div>
 		</div>
-		<div class="buttonDown center">
-			<img src="img/downbutton.svg" class='img-fluid' alt=""></img>
-		</div>
+	</div>
+	<div class="buttonDown center">
+		<!-- 	<img src="img/downbutton.svg" class='img-fluid' alt=""></img> -->
+	</div>
 </div>
 
-		<div class="container margin-top">
+		<div id='bio' class="container margin-top">
 			<div class="row">
 				<div class="col-xs-12 col-md-6 col-lg-6 clientInfo-con">
 					<div class='clientName center'>
@@ -56,8 +63,8 @@
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed venenatis sem. Etiam porta pulvinar enim, sit amet cursus erat blandit nec. In nec pharetra sem, et ullamcorper tellus. Nam est dolor, sagittis et lacus vel, dignissim faucibus augue. Curabitur egestas nisl leo, sed mattis metus finibus eu. Praesent velit orci, dapibus vitae porttitor semper, molestie vitae orci. Cras cursus, neque at maximus dictum, elit felis viverra nulla, a vulputate tellus lectus vitae nisl. Curabitur nisi quam, blandit a massa a, facilisis semper ex.</p>
 				</div>
-				<div class="col-xs-12 col-md-6 col-lg-6">
-					<img src="img/elvis2.png" class='img-fluid' alt="elvis2"></img>
+				<div id='introductionPic' class="col-xs-12 col-md-6 col-lg-6">
+					<img src="img/elvis2.png" id='introductionPic' alt="elvis2"></img>
 				</div>
 			</div>
 		</div>
@@ -85,12 +92,14 @@
 
 	</div>
 
-		<div class="container margin-top">
+		<div id='album' class="container margin-top">
 			<div class="row">
 				<div class="col-xs-12 col-md-6 col-lg-6">
-					<img src="img/album.png" class='img-fluid' alt="latestalbum"></img>
+					<div class="latestalbum">
+						<img src="img/album.jpg" class='img-fluid'  alt="latestalbum"></img>
+					</div>
 				</div>
-				<div class="col-xs-12 col-md-6 col-lg-6">
+				<div class="col-xs-12 col-md-6 col-lg-6 margin-top">
 					<span class='clientTitle'>CAN'T HELP FALLIN IN LOVE WITH YOU</span>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed venenatis sem. Etiam porta pulvinar enim, sit amet cursus erat blandit nec. In nec pharetra sem, et ullamcorper tellus. Nam est dolor, sagittis et lacus vel, dignissim faucibus augue. Curabitur egestas nisl leo, sed mattis metus finibus eu. Praesent velit orci, dapibus vitae porttitor semper, molestie vitae orci. Cras cursus, neque at maximus dictum, elit felis viverra nulla, a vulputate tellus lectus vitae nisl. Curabitur nisi quam, blandit a massa a, facilisis semper ex.</p>
 					<span class='spotifyText'>Available on</span>
@@ -132,12 +141,16 @@
 				<div class="col-xs-12 col-md-12 col-lg-12 margin-top">
 					<span class='clientTitle'>CONTACT</span>
 					<form class='' action="">
-						<div class="form-group">
+						<div class="form-group col-md-6">
 							<label for="email"></label>
 							<input type="email" placeholder="Email" class="margin-top" id='email'>
 							<div class="gLine"></div>
+
+							<label for="name"></label>
+							<input type="firstname" placeholder="Name" class="margin-top" id='email'>
+							<div class="gLine"></div>
 						</div>
-						<div class="form-group">
+						<div class="form-group col-md-12">
 							<label for="email"></label>
 							<input type="text"  placeholder="Messages" class="margin-top" id='message'>
 							<div class="gLine"></div>
@@ -151,63 +164,36 @@
 		</div>
 		
 		<footer class='footer margin-top'>
-			<div class="gLine"></div>
+			<!-- <div class="gLine"></div> -->
 			<div class="container">
-				<div class="row">
-
-						<div class="col-xs-12 col-md-4 col-md-4">
-							<img class="logo margin-top" src="img/logo.png" alt=""></img>
-						</div>
-						
-						<div class="col-xs-6 col-md-4 col-md-4">
-							<ul class='margin-top'>
-								<li>BIOGRAPHY</li>
-								<li>MUSIC</li>
-								<li>EVENTS</li>
-								<li>CONTACTS</li>
-							</ul>
-						</div>
-
-						<div class="col-xs-6 col-md-4 col-md-4">
-							<ul class='margin-top'>
-								<li>Facebook</li>
-								<li>Instagram</li>
-								<li>Youtube</li>
-								<li>Spotify</li>
-							</ul>
+				<div class="row centerV">
+						<div class="col-xs-12 col-md-12 col-md-12">
+							<div class='center'>
+								<a href=""><i class="fab fa-youtube"></i></a>
+								<a href=""><i class="fab fa-facebook"></i></a>
+								<a href=""><i class="fab fa-spotify"></i></a>
+								<a href=""><i class="fab fa-instagram"></i></a>
+							</div>
 						</div>
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-md-12 col-lg-12 reserved">
-				<div class='centerV'>
-					ALL RIGHTS RESERVED 2018
-				</div>
-			<!-- 	<div class="gLine center" style='width: 5%'></div> -->
-			</div>
+			
 				
 		</footer>
 
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-lg-12 reserved">
+					<div class='center text-reserved'>
+						ALL RIGHTS RESERVED 2018
+					</div>
+				</div>
+			</div>
+		</div>
+	
 
-<script>
-window.scroll({
-  top: 2500, 
-  left: 0, 
-  behavior: 'smooth' 
-});
 
-// Scroll certain amounts from current position 
-window.scrollBy({ 
-  top: 100, // could be negative value
-  left: 0, 
-  behavior: 'smooth' 
-});
-
-// Scroll to a certain element
-document.querySelector('.hello').scrollIntoView({ 
-  behavior: 'smooth' 
-});
-</script>
 
 
 
