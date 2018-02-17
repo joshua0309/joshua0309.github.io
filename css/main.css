@@ -198,14 +198,14 @@ button  {
 
 
 .elvisMain {
+	display:block;
 	height: 100%;
 	width: 100%;
-	
 }
 
 
 .elvisMain:before {
-
+	display:block;
 	background: url("../img/elvis1.png"); 
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
@@ -287,12 +287,8 @@ button  {
 	
 }
 
-/*introduction*/
-
-
-
-#introduction {
-	margin-bottom: 15px;
+#introductionPic {
+	overflow: hidden;
 }
 
 .clientTitle {
@@ -349,8 +345,6 @@ button  {
 	margin-top: 0px;
 	position: relative;
 }
-
-
 
 .eventPlace {
 	position: relative;
@@ -444,5 +438,5 @@ footer a {
 	opacity:1;
 	transform: translateX(0%) scale(1);
 	-webkit-transform: translateX(0%) scale(1); 
-	transition: all 1s; 
+	transition: all 0.5s; 
 }
