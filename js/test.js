@@ -15,38 +15,19 @@ function debounce(func, wait , immediate) {
 
 
 var toSlide =  document.querySelectorAll('.slide');
+var navH    =  document.getElementById('header');
 
 
 function checkSlide(e) {
+
+	
 
 	toSlide.forEach(toSlideS => {
 	const slideInAt = (window.scrollY +  window.innerHeight) - toSlideS.height / 2;
 	const imageBottom  = toSlideS.offsetTop + toSlideS.height;
 	const isHalfShown  = slideInAt > toSlideS.offsetTop;
 	const isNOtScrolledPast = window.scrollY < imageBottom;
-	console.log(toSlideS.height +  "height");
-	console.log(toSlideS.offsetTop + "offset top");
 	
-	
-	if (isHalfShown && isNOtScrolledPast) {
-		toSlideS.classList.add('active');
-	} else {
-		 // toSlideS.classList.remove('active');
-	}
-
-	});
-
-}
-
-function checkSlide(e) {
-
-	toSlide.forEach(toSlideS => {
-	const slideInAt = (window.scrollY +  window.innerHeight) - toSlideS.height / 2;
-	const imageBottom  = toSlideS.offsetTop + toSlideS.offsetHeight;
-	const isHalfShown  = slideInAt > toSlideS.offsetTop;
-	const isNOtScrolledPast = window.scrollY < imageBottom;
-	console.log(toSlideS.height +  "height");
-	console.log(toSlideS.offsetTop + "offset top");
 	
 	
 	if (isHalfShown && isNOtScrolledPast) {

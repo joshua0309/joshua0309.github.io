@@ -5,7 +5,6 @@ html,body {
 	margin: 0;
 	/*background-color: #ffeed6;*/
 
-	
 }
 
 a {
@@ -32,8 +31,12 @@ footer i,a {
 	margin: 0px 8px;
 }
 
+nav ul>li>a {
+	color: black ;
+}
+
 nav {
-background-color: transparent;
+	background-color: white !important;
 }
 
 input[type='text'],input[type='email'],input[type='firstname'] {
@@ -70,8 +73,8 @@ button  {
 	width: 100px;
 	background-color: #3f9cff;
 	border-color: transparent;
-	color: white;
-	font-family: 'Oswald', 'serif';
+	color: white !important;
+	font-family: 'Oswald', 'serif' !important;
 	font-size: 16px;
 	text-transform: uppercase;
 }
@@ -102,9 +105,12 @@ button  {
   transform: translate(-50%, -50%);
 }
 
+.bg-red {
+	background-color: red;
+}
 
 .margin-top {
-	margin-top: 100px;
+	margin-top: 100px !important;
 }
 
 .clientTitle {
@@ -112,22 +118,17 @@ button  {
 }
 
 .logo {
-	height: 65px;
-	width: 65px;
+	height: 50px;
+	width: 50px;
 	float: left;
 }
 
 .header {
-	position: fixed;
+	position: absolute;
 	top: 1;
 	z-index: 2;
 	width: 100%;
 	padding: 14px 14px;
-}
-
-.nav-box {
-	padding: 0px 10px;
-	width: 100%;
 }
 
 .nav-list {
@@ -154,6 +155,7 @@ button  {
 	animation: changecolor 0.2s linear forwards ;
 	/*animation: draw 0.5s ease;*/
 }
+
 
 @keyframes changecolor {
 
@@ -192,8 +194,7 @@ button  {
 .elvisMain {
 	height: 100%;
 	width: 100%;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
+	
 }
 
 
@@ -368,21 +369,22 @@ button  {
 footer {
 	background-color: #ff3f3f;
 	width:  100%;
-	height: 65px;
+	height: 100%;
+	max-height: 100px;
+	padding:10px 10px;
+
+}
+
+footer a {
 	color: white;
-	position: relative;
 	font-family: 'Oswald', 'sans-serif';
 }
 
-footer ul {
-	list-style-type: none;
-
+.icons {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
-footer li {
-	margin: 0px 0px;
-	display: inline;
-}
 
 .reserved {
 	/*position: relative;*/
@@ -398,19 +400,22 @@ footer li {
 
 
 
+
 .text-reserved {
+	font-size: 12px;
 	padding: 5px 5px 0px 0px;
+	color: white;
+	font-family: 'Oswald', 'sans-serif';
 }
 
 .slide {
 	opacity: 0;
 	transition: all 1s;
-	
 }
 
 .rightAlignA {
-	transform: translate(30%) scale(0.95);
-	-webkit-transform: translate(30%) scale(0.95);
+	transform: translate(1%) scale(0.95);
+	-webkit-transform: translate(1%) scale(0.95);
 }
 
 .leftAlignA {

@@ -16,6 +16,8 @@
    	
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
    	<!-- font-awesome -->
    	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -24,27 +26,26 @@
 
 </head>
 <body>
-
-
- 		<div  class="header">
-					
-						<div class="nav-box">
-							<img class="logo" src="img/logo.png" alt=""></img>
-							<div class="nav_items">
-								<ul class='nav-list'>
-									<li><a href="#contact">Contact</a></li>
-									<li><a href="#event">Tour</a></li>
-									<li><a href="#album">Music</a></li>
-									<li><a href="#bio">Biography</a></li>
-								</ul>
-							</div>
+	
+		<div id='header' class="header">
+				<div class="nav-box">
+					<img class="logo" src="img/logo.png" alt=""></img>
+						<div class="nav_items">
+							<ul class='nav-list'>
+								<li><a href="#contact">Contact</a></li>
+								<li><a href="#event">Tour</a></li>
+								<li><a href="#album">Music</a></li>
+								<li><a href="#bio">Biography</a></li>
+							</ul>
 						</div>
-					
+				</div>
 		</div>
+	
 
-			
-		<div class="elvisMain">
-		</div>
+	<div class="elvisMain">
+		
+	</div>		
+		
 
 		<div id='bio' class="container margin-top">
 			<div class="row">
@@ -85,12 +86,12 @@
 			</div>
 		</div>
 
-		<div id='album' class="container margin-top">
+		<div id='album' class="margin-top container">
 			<div class="row">
 				<div class="col s12 m6 l6">
 						<img class='latestalbum responsive-img slide leftAlignA' src="img/album.jpg" id=''></img>
 				</div>
-				<div class="col s12 m6 l6 margin-top">
+				<div class="col s12 m6 l6">
 					<span class='clientTitle'>CAN'T HELP FALLIN IN LOVE WITH YOU</span>
 					<p class=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed venenatis sem. Etiam porta pulvinar enim, sit amet cursus erat blandit nec. In nec pharetra sem, et ullamcorper tellus. Nam est dolor, sagittis et lacus vel, dignissim faucibus augue. Curabitur egestas nisl leo, sed mattis metus finibus eu. Praesent velit orci, dapibus vitae porttitor semper, molestie vitae orci. Cras cursus, neque at maximus dictum, elit felis viverra nulla, a vulputate tellus lectus vitae nisl. Curabitur nisi quam, blandit a massa a, facilisis semper ex.</p>
 					<span class='spotifyText'>Available on</span>
@@ -100,7 +101,7 @@
 
 		</div>
 		
-		<div id='event' class=" margin-top">
+		<div id='event' class="margin-top">
 			<div class="row">
 				<div class="eventCon center padding-0 col s12 m6 col l6">
 					<div class="centerV">	
@@ -127,7 +128,7 @@
 			</div>
 		</div>
 
-		<div id='contact' class="">
+		<div id='contact ' class="container">
 			<div class="row">
 				<div class="col s12  m12 l12 margin-top">
 					<span class='clientTitle'>CONTACT</span>
@@ -135,16 +136,15 @@
 						<div class="form-group col m6">
 							<label for="email"></label>
 							<input type="email" placeholder="Email" class="margin-top" id='email'>
-							<div class="gLine"></div>
 
 							<label for="name"></label>
 							<input type="firstname" placeholder="Name" class="margin-top" id='email'>
-							<div class="gLine"></div>
+							
 						</div>
 						<div class="form-group m12">
 							<label for="email"></label>
 							<input type="text"  placeholder="Messages" class="margin-top" id='message'>
-							<div class="gLine"></div>
+						
 						</div>
 						<div class="form-group">
 							<button type='submit'>Submit</button>
@@ -154,36 +154,37 @@
 			</div>
 		</div>
 		
-		<footer class='footer margin-top'>
-			<!-- <div class="gLine"></div> -->
-			<div class="">
-				<div class="row centerV">
-						<div class="col s12 m12 l12">
-							<div class='center'>
-								<a href=""><i class="fab fa-youtube"></i></a>
-								<a href=""><i class="fab fa-facebook"></i></a>
-								<a href=""><i class="fab fa-spotify"></i></a>
-								<a href=""><i class="fab fa-instagram"></i></a>
-							</div>
+		<footer class='center-align margin-top'>
+			<div class="row ">
+					<div class="col s12 m12 l12">
+						<div class=''>
+							<a href=""><i class="fab fa-youtube"></i></a>
+							<a href=""><i class="fab fa-facebook"></i></a>
+							<a href=""><i class="fab fa-spotify"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
 						</div>
-				</div>
+					</div>
 			</div>
-		</footer>
-
-		<div class="">
 			<div class="row">
-				<div class="col s12 m12 l12 reserved">
+				<div class="col s12 m12 l12 ">
 					<div class='center text-reserved'>
 						ALL RIGHTS RESERVED 2018
 					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
+
+		
+			
 
 <script type="text/javascript" src="js/test.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-
-
+	<script>
+		$( document ).ready(function() {
+	        $(".button-collapse").sideNav();
+	    });
+	</script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
           
