@@ -91,7 +91,13 @@ button  {
 .center {
 	margin: 0 auto;
 	text-align: center;
+/*	display: table-cell;
+    vertical-align: middle;*/
+
 }
+
+
+
 
 .padding-0 {
 	padding-right: 0px !important;
@@ -245,12 +251,13 @@ button  {
 
 
 .quote {
-	height: auto;
+	height: 100%;
+	max-height: 552px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-.quote:before {
+.quote:after {
 	z-index: -1;
 	position:absolute;
 	width: 100%;
@@ -269,6 +276,10 @@ button  {
 	font-size: 2em;
 	font-weight: 300 ; 
 
+}
+
+#quoteLogo {
+	width:100%;
 }
 
 .albumTitle {
@@ -306,6 +317,11 @@ button  {
 	letter-spacing: 20px;
 	color: #3f9cff;
 
+}
+
+#bio {
+	height: 100%;
+	max-height: 552PX;
 }
 
 .latestalbum {
@@ -410,12 +426,13 @@ footer a {
 
 .slide {
 	opacity: 0;
-	transition: all 1s;
+	transition: all .5s;
+	position: relative;
 }
 
 .rightAlignA {
-	transform: translate(1%) scale(0.95);
-	-webkit-transform: translate(1%) scale(0.95);
+	transform: translate(30%) scale(0.95);
+	-webkit-transform: translate(30%) scale(0.95);
 }
 
 .leftAlignA {

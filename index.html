@@ -59,31 +59,24 @@
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed venenatis sem. Etiam porta pulvinar enim, sit amet cursus erat blandit nec. In nec pharetra sem, et ullamcorper tellus. Nam est dolor, sagittis et lacus vel, dignissim faucibus augue. Curabitur egestas nisl leo, sed mattis metus finibus eu. Praesent velit orci, dapibus vitae porttitor semper, molestie vitae orci. Cras cursus, neque at maximus dictum, elit felis viverra nulla, a vulputate tellus lectus vitae nisl. Curabitur nisi quam, blandit a massa a, facilisis semper ex.</p>
 				</div>
-				<div id="introductionPic" class="col s12 m6 l6">
+				<div id="introductionPic" class="col s12 m6 l6 ">
 						<img class='responsive-img rightAlignA slide' src="img/elvis3.png"  alt="elvis2"></img>
 				</div>
 			</div>
 		</div>
 		
-		<div class="quote">
-			<div class=" margin-top">
-				<div class="row">
-					<div class="col s12 m12 l12">
-						<div class="center">
-							<img src="img/quote.svg" class='responsive-img' id='quoteLogo' alt=""></img>
-						</div>
-						<div class='center'>
-							<span>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed venenatis sem.
-							</span>
-							<span class='thick'>
-								Noberto "Buddy" Reyes
-							</span>
-						</div>
-					
+		<div class="quote valign-wrapper ">
+			<div class="margin-top row">
+				<div class="center-align col s12 m12 l12">
+						<img src="img/quote.svg" class='responsive-img' id='quoteLogo' alt=""></img>
 					</div>
+					<span class='center-align'>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed venenatis sem.
+							</span>
+					<span class='thick center-align'>
+							Noberto "Buddy" Reyes
+					</span>
 				</div>
-			</div>
 		</div>
 
 		<div id='album' class="margin-top container">
@@ -128,31 +121,37 @@
 			</div>
 		</div>
 
-		<div id='contact ' class="container">
+		<div id='contact' class="container margin-top"">
 			<div class="row">
-				<div class="col s12  m12 l12 margin-top">
-					<span class='clientTitle'>CONTACT</span>
-					<form class='' action="">
-						<div class="form-group col m6">
-							<label for="email"></label>
-							<input type="email" placeholder="Email" class="margin-top" id='email'>
-
-							<label for="name"></label>
-							<input type="firstname" placeholder="Name" class="margin-top" id='email'>
-							
+				<span class='clientTitle'>CONTACT</span>
+				<form class='' action="">
+					<div class="row">
+						<div class="input-field col s6 margin-top">
+							<label for="email">Email</label>
+							<input type="email" class="validate" id='email'>
 						</div>
-						<div class="form-group m12">
-							<label for="email"></label>
-							<input type="text"  placeholder="Messages" class="margin-top" id='message'>
-						
+						<div class="input-field col s6 margin-top">	
+							<input type="text"   id='name'>
+								<label for="name">Name</label>
 						</div>
-						<div class="form-group">
-							<button type='submit'>Submit</button>
+					</div>
+					<div class="row">
+						<div class="input-field col s12 margin-top">
+							 <textarea id="textarea1" class="materialize-textarea"></textarea>
+        					 <label for="textarea1">Message</label>
 						</div>
-					</form>
-				</div>
+					</div>
+					<div class="row">
+						<div class="col s12">
+							<button>SUBMIT</button>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
+
+
+        
 		
 		<footer class='center-align margin-top'>
 			<div class="row ">

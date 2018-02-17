@@ -23,7 +23,7 @@ function checkSlide(e) {
 	
 
 	toSlide.forEach(toSlideS => {
-	const slideInAt = (window.scrollY +  window.innerHeight) - toSlideS.height / 2;
+	const slideInAt = (window.scrollY +  window.innerHeight) - toSlideS.height * 0.40;
 	const imageBottom  = toSlideS.offsetTop + toSlideS.height;
 	const isHalfShown  = slideInAt > toSlideS.offsetTop;
 	const isNOtScrolledPast = window.scrollY < imageBottom;
@@ -39,7 +39,6 @@ function checkSlide(e) {
 	});
 
 }
-
 
 
 
