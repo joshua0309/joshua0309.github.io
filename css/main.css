@@ -240,16 +240,14 @@ button  {
 	color: white;
 	size: 2em;
 	text-align: center;
-	border: 1px solid white;
 	position: relative;
-
+	height:100%;
+	width:100%;
 }
 
-.landingletter>span {
-	margin: 0 0;
-	padding: 15px 150px 15px 150px;
+#svgTextN {
 	font-family: 'Oswald';
-	font-size: 2em;
+	font-size: 1em;
 	letter-spacing: 2px;
 }
 /*
@@ -304,10 +302,8 @@ button  {
 .diamond {
 	height: 120px;
 	width: 120px;
-	
 	transform: rotate(45deg);
 	margin-bottom:14px;
-
 	background-color: gray;
  }
 
