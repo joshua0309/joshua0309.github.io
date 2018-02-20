@@ -245,6 +245,11 @@ button  {
 	width:100%;
 }
 
+.video>iframe {
+	min-height: 500px;
+	height: 100%;
+}
+
 #svgTextN {
 	font-family: 'Oswald';
 	font-size: 1em;
